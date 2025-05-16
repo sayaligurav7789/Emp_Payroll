@@ -132,7 +132,7 @@ If all components are ₹1000:
 
 ---
 
-### ✅ Different Features Tabs Available  
+### ✅ Key Functional Tabs
 <img src="https://github.com/user-attachments/assets/f051cc1a-a8a7-456b-9599-93e249921941" alt="List Features" width="500"/>
 
 ---
