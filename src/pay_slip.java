@@ -1,7 +1,16 @@
-import java.sql.*;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.Choice;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class pay_slip extends JFrame implements ActionListener{
 
@@ -60,13 +69,13 @@ public class pay_slip extends JFrame implements ActionListener{
  
             java.util.Date d1 = new java.util.Date();
             int month = d1.getMonth();
-            t1.setText(" ----------------   PAY SLIP FOR THE MONTH OF "+month+" ,2019  ------------------------");
+            t1.setText(" ----------------   PAY SLIP    -----------------");
             t1.append("\n");
   
             if(rs.next()){
           
-                t1.append("\n     Employee ID "+rs.getString("id"));
-                t1.append("\n     Employee Name "+name);
+                t1.append("\n     Employee ID: "+rs.getString("id"));
+                t1.append("\n     Employee Name: "+name);
  
                 t1.append("\n----------------------------------------------------------------");
                 t1.append("\n");

@@ -1,6 +1,8 @@
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.Properties;
 
 public class conn {
 
@@ -9,28 +11,21 @@ public class conn {
 
     public conn() {
         try {
-            // Load the MySQL JDBC Driver
+            Properties p = new Properties();
+            p.load(new FileInputStream("config.properties"));
+
+            String url = p.getProperty("db.url");
+            String user = p.getProperty("db.user");
+            String pass = p.getProperty("db.password");
+
             Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // Establish connection to the MySQL database
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/project2", "root", "");
-
-            // Create a statement object for executing queries
+            c = DriverManager.getConnection(url, user, pass);
             s = c.createStatement();
 
-            if (c != null) {
-                System.out.println("Connection successful!");
-            }
+            System.out.println("Connection successful!");
 
         } catch (Exception e) {
-            // Print the error stack trace if connection fails
-            System.err.println("Connection failed: " + e.getMessage());
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        // Create a conn object to test the connection
-        new conn();
     }
 }
