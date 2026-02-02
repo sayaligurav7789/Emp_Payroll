@@ -1,12 +1,15 @@
-# Ignore DB configuration
+# Sensitive configuration
 config.properties
 
-# Ignore compiled files
+# Compiled / generated files
 bin/
 out/
 build/
-dist/
-
-# OS / IDE files
-.vscode/
 *.class
+
+# Build artifacts (ignore jars, not the folder)
+dist/*.jar
+
+# IDE / OS files
+.vscode/
+.DS_Store

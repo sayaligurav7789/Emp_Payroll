@@ -1,7 +1,17 @@
-import java.sql.*;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.Choice;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class New_Employee extends JFrame implements ActionListener{
     JLabel l1,l2,l3,l4,l5,l6,l7;
@@ -59,7 +69,13 @@ public class New_Employee extends JFrame implements ActionListener{
         p1.add(b2);
        
         setLayout(new BorderLayout());
-        add(new JLabel(new ImageIcon(ClassLoader.getSystemResource("icons/new_employee.png"))),"West");
+        add(
+            new JLabel(
+                new ImageIcon(getClass().getResource("/icons/new_employee.png"))
+            ),
+            BorderLayout.WEST
+        );
+
         add(p1,"Center");
        
         b1.addActionListener(this);
