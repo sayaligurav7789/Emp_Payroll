@@ -1,0 +1,12 @@
+# Ignore DB configuration
+config.properties
+
+# Ignore compiled files
+bin/
+out/
+build/
+dist/
+
+# OS / IDE files
+.vscode/
+*.class
