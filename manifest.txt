@@ -1,3 +1,2 @@
 Main-Class: login
-Class-Path: dist/lib/mysql-connector-j-9.3.0.jar
-
+Class-Path: lib/mysql-connector-j-9.3.0.jar
