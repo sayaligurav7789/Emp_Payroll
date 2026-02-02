@@ -36,7 +36,7 @@ public class login extends JFrame implements ActionListener{
 
         b2 = new JButton(
             "Cancel",
-            new ImageIcon(getClass().getResource("/icon/Cancel.png"))
+            new ImageIcon(getClass().getResource("/icon/cancel.png"))
         );
 
         b1.addActionListener(this);

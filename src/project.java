@@ -41,14 +41,14 @@ public class project extends JFrame implements ActionListener {
         t1.setFont(new Font("monospaced", Font.PLAIN, 12));
         t1.setMnemonic('N');
         t1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
-        t1.setIcon(new ImageIcon(getClass().getResource("/Icons/New.png")));
+        t1.setIcon(new ImageIcon(getClass().getResource("/icons/New.png")));
         m1.add(t1);
 
         JMenuItem t3 = new JMenuItem("Salary");
         t3.setForeground(Color.BLUE);
         t3.setFont(new Font("monospaced", Font.PLAIN, 12));
         t3.setMnemonic('S');
-        t3.setIcon(new ImageIcon(getClass().getResource("/icon/schedreport.png")));
+        t3.setIcon(new ImageIcon(getClass().getResource("/icon/schedreport.PNG")));
         t3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
         m1.add(t3);
 
@@ -73,7 +73,7 @@ public class project extends JFrame implements ActionListener {
         s1.setForeground(Color.BLUE);
         s1.setFont(new Font("monospaced", Font.PLAIN, 12));
         s1.setMnemonic('U');
-        s1.setIcon(new ImageIcon(getClass().getResource("/Icons/EditOpen.png")));
+        s1.setIcon(new ImageIcon(getClass().getResource("/icons/EditOpen.png")));
         s1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_U, ActionEvent.CTRL_MASK));
         edit.add(s1);
 
@@ -127,7 +127,7 @@ public class project extends JFrame implements ActionListener {
         mb.add(util);
 
         JMenuItem u1 = new JMenuItem("Notepad");
-        u1.setIcon(new ImageIcon(getClass().getResource("/Icons/New.png")));
+        u1.setIcon(new ImageIcon(getClass().getResource("/icons/New.png")));
         u1.setForeground(Color.BLUE);
         u1.setFont(new Font("monospaced", Font.PLAIN, 12));
         u1.setMnemonic('O');
@@ -163,7 +163,7 @@ public class project extends JFrame implements ActionListener {
         m8i1.setForeground(Color.BLUE);
         m8i1.setFont(new Font("monospaced", Font.PLAIN, 14));
         m8i1.setMnemonic('X');
-        m8i1.setIcon(new ImageIcon(getClass().getResource("/icon/exit.PNG")));
+        m8i1.setIcon(new ImageIcon(getClass().getResource("/icon/exit.png")));
         m8i1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.CTRL_MASK));
         m8i1.addActionListener(this);
         m8.add(m8i1);
